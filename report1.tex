@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{ctexart}
+\input{report-sp24}
+
+\newcommand{\studentName}{张三} % 学生姓名
+\newcommand{\studentID}{20242100000} % 学生学号
+\newcommand{\studentGrade}{计算机科学与技术 2024} % 学生班级
+
+\newcommand{\reportName}{最小生成树算法比较}
+\newcommand{\className}{算法分析与设计}
+\newcommand{\reportType}{课程报告}
+\newcommand{\reportSemester}{2024春}
+\newcommand{\prof}{程振波}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{内容与要求}
+本次课程报告以最小生成树问题为背景，请根据以下要求完成报告内容：
+\begin{itemize}
+    \item 问题背景请首先介绍什么是最小生成树问题，然后描述最小生成树问题的应用场景；
+    \item 最小生成树算法介绍部分，请分别描述Prim算法和Kruskal算法，算法描述请使用伪代码。伪代码的格式可参考如下欧拉算法\ref{alg:euclid}的描述；
+    \begin{algorithm}
+        \caption{欧拉算法}\label{alg:euclid}
+        \begin{algorithmic}[1]
+        \Procedure{Euclid}{$a,b$}\Comment{a和b的公共}
+        \State $r\gets a\bmod b$
+        \While{$r\not=0$}\Comment{如果r是0}
+        \State $a\gets b$
+        \State $b\gets r$
+        \State $r\gets a\bmod b$
+        \EndWhile\label{euclidendwhile}
+        \State \textbf{return} $b$\Comment{返回公共因子}
+        \EndProcedure
+        \end{algorithmic}
+    \end{algorithm}
+    \item 算法实现和比较部分包括：
+    \begin{itemize}
+        \item 要求分别使用不同数据结构实现Prim算法（数组和优先队列）和Kruskal算法（数组与并查集），并给出不同数据结构实现这两个算法运行时间的变化；
+        \item 请给出选用不同数据结构对算法效率影响的理论分析；
+        \item 比较Prim算法和Kruskal算法在求解稠密图和稀疏图时运行时间的比较；
+        \item 算法比较需要随机生成至少10组不同的数据，然后统计每组不同数据的算法运行平均时间；
+        \item 算法实现不要贴源代码，只需通过图表的方式给出不同情形（如数据结构）下的数据（如运行时间）；
+    \end{itemize}
+    \item 总结部分需要根据算法实现与比较的数据分析得出一般性的结论；
+    \item 课程报告要求语言精炼，数据翔实，列出参考文献；
+    \item 课程报告要求独立完成。
+\end{itemize}
+
+该课程报告的模版是在CTex\cite{ctex}基础上修改而成，如何在模版插入图片或者制作表格请参考该模版的文档。
+
+\section{问题背景}
+
+\section{最小生成树算法介绍}
+\subsection{Prim算法}
+
+\subsection{Kruskal算法}
+
+\section{算法实现与比较}
+\subsection{算法性能提升}
+
+\subsection{算法适用场景分析}
+
+\section{结论}
+\begin{thebibliography}{9}
+    \bibitem{ctex} https://ctex.org/
+\end{thebibliography}
+\end{document}
